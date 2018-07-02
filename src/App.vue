@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+<<<<<<< HEAD
     <div>
       <div class="navbar-fixed">
         <nav>
@@ -30,12 +31,15 @@
         </div>
       </footer>
     </div>
+=======
+>>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
+<<<<<<< HEAD
   name: 'App',
   data() {
     return {
@@ -47,6 +51,8 @@ export default {
     } 
   }
      
+=======
+>>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
   name: 'App'
 }
 </script>
@@ -56,7 +62,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-top: 60px;
 }
+<<<<<<< HEAD
 
 body {
   margin: auto;
@@ -71,3 +79,6 @@ nav{
   padding: 0px;
 }
 </style>
+=======
+</style>
+>>>>>>> parent of 0398f58... creation du main, supp acceuil.vue

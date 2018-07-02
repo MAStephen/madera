@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
-<<<<<<< HEAD
     <div>
       <div class="navbar-fixed">
         <nav>
@@ -21,7 +19,7 @@
         </nav>
       </div>
 
-  <router-view/>
+      <router-view/>
 
       <footer class="page-footer blue-grey">
         <div class="footer-copyright">
@@ -32,18 +30,11 @@
         </div>
       </footer>
     </div>
-=======
->>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
-=======
->>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
-    <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-<<<<<<< HEAD
-<<<<<<< HEAD
   name: 'App',
   data() {
     return {
@@ -54,12 +45,6 @@ export default {
       menu_4: 'Nous'
     } 
   }
-     
-=======
->>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
-=======
->>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
-  name: 'App'
 }
 </script>
 
@@ -68,10 +53,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 body {
   margin: auto;
@@ -85,9 +68,4 @@ nav{
   width: 1550px;
   padding: 0px;
 }
-=======
->>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
 </style>
-=======
-</style>
->>>>>>> parent of 0398f58... creation du main, supp acceuil.vue

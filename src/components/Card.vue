@@ -8,7 +8,7 @@
       <p>{{ text }}</p>
     </div>
     <div class="card-action">
-      <a href="#">This is a link</a>
+      <a href="#">{{title_link || "En savoir plus"}}</a>
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@
 <script>
 export default {
   name: 'Card',
-  props: ['text', 'title', 'image', 'basepath'],
+  props: ['text', 'title', 'image', 'basepath', 'title_link'],
   data () {
     return {
     }

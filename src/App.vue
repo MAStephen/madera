@@ -1,6 +1,7 @@
 <template>
   <div id="app">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div>
       <div class="navbar-fixed">
         <nav>
@@ -33,12 +34,15 @@
     </div>
 =======
 >>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
+=======
+>>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
+<<<<<<< HEAD
 <<<<<<< HEAD
   name: 'App',
   data() {
@@ -53,6 +57,8 @@ export default {
      
 =======
 >>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
+=======
+>>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
   name: 'App'
 }
 </script>
@@ -64,6 +70,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 body {
@@ -78,6 +85,8 @@ nav{
   width: 1550px;
   padding: 0px;
 }
+=======
+>>>>>>> parent of 0398f58... creation du main, supp acceuil.vue
 </style>
 =======
 </style>

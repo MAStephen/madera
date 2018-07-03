@@ -121,7 +121,7 @@ export default {
   },
   mounted: function () {
     var elems = document.querySelectorAll('.collapsible')
-    M.Collapsible.init(elems, {})
+    window.M.Collapsible.init(elems, {})
   }
 }
 </script>

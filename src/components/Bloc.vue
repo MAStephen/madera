@@ -4,11 +4,11 @@
         <div class="container">
         <div class="row">
           <div class="col s12 white-text">
-            <h2 class="teal-text teal-text lighten-2">{{ title }}</h2>
+            <h2 class="white-text white-text lighten-2">{{ title }}</h2>
             <p>{{ text }}</p>
         </div>
-    </div>
-  </div>
+      </div>
+      </div>
       <div class="parallax"><img :src="image_path(image)"></div>
     </div>
   </div>
@@ -38,4 +38,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  h2 {
+    text-shadow: 2px 2px 3px rgba(0,0,0, 0.5);
+  }
+
+ .parallax-container {
+  text-align: center;
+ }
 </style>

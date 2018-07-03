@@ -32,4 +32,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .card-content {
+    min-height: 200px;
+    text-align: justify;
+  }
+
+  img {
+    height: 250px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>

@@ -4,14 +4,12 @@
       <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper">
-            <a href="#" class="left slogan">{{slogan}}</a>
-
-            <a href="#" class="brand-logo center">{{titre}}</a>
+            <router-link to="/" class="brand-logo left">{{titre}}</router-link>
 
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><router-link to="why"><i class="small material-icons left">dashboard</i>{{menu_2}}</router-link></li>
               <li><a href="#"><i class="small material-icons left">insert_chart</i>{{menu_1}}</a></li>
-              <li><a href="#"><i class="small material-icons left">date_range</i>{{menu_3}}</a></li>
+              <li><router-link to="rdv"><i class="small material-icons left">date_range</i>{{menu_3}}</router-link></li>
               <li><a href="#"><i class="small material-icons left">contacts</i>{{menu_4}}</a></li>
             </ul>
           </div>

@@ -2,13 +2,13 @@
   <div class="card">
     <div class="card-image">
       <img :src="image_path(image)">
-      <span class="card-title">{{ title }}</span>
+      <span class="card-title"></span>
     </div>
     <div class="card-content">
       <p>{{ text }}</p>
     </div>
     <div class="card-action">
-      <a href="#">{{title_link || "En savoir plus"}}</a>
+      <a :href="'#' + title">{{title_link || "En savoir plus"}}</a>
     </div>
   </div>
 </template>
@@ -33,7 +33,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .card-content {
-    min-height: 200px;
+    height: 200px;
     text-align: justify;
   }
 

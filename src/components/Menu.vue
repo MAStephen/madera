@@ -1,19 +1,13 @@
 <template>
-  <div>
+<div>
 
-    <div class="col s12 m8">
-      <div id="container_1">
-          <img id="image_present" src="..\assets\menu\house_draw.jpg">
-          <a class="waves-effect amber accent-3 btn-large button"><i class="material-icons left">cloud</i>Parcourir</a>
-          <span id="text_present">POURQUOI <br/> PAS VOUS ?</span>
-      </div>
-    </div>
+  <bloc basepath="menu" image="house_draw.jpg" title="Madera" text="Pourquoi pas vous ?" />
 
-    <hr class="separateur">
-
+  <div class="container">
     <div id="container_2">
       <div class="row">
-      <div class="col s6 m12"><h2>MADERA & VOUS</h2></div>
+      <div class="center"><h2>MADERA & VOUS</h2></div>
+      <div class="col m12">
       <div class="col s6 m6">
         <ul class="collapsible">
           <li>
@@ -38,7 +32,7 @@
           </li>
         </ul>
       </div>
-      <div class="col s12 m6">
+      <div class="col s6 m6">
          <ul class="collapsible">
           <li>
             <div class="collapsible-header"><i class="material-icons">local_florist</i>L'écologie</div>
@@ -61,6 +55,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </div>
 
       <div id="container_3" class="row">
@@ -108,14 +103,16 @@
           </ul>
         </div>
       </div>
-
     </div>
-    </div>
+   </div>
+  </div>
 
   </div>
 </template>
 
 <script>
+import Bloc from './Bloc.vue'
+
 export default {
   name: 'Menu',
   data () {
@@ -124,72 +121,15 @@ export default {
   },
   mounted: function () {
     var elems = document.querySelectorAll('.collapsible')
-    M.Collapsible.init(elems, {})
+    window.M.Collapsible.init(elems, {})
+  },
+
+  components: {
+    Bloc
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* Container numéro 1, présentation */
-@font-face {
-  font-family: "milstone_outline";
-  src: url(..\assets\font\Milestone_Outline.otf);
-}
-
-#container_1 {
-  width: 80vw;
-  height: 450px;
-  margin-bottom: 30px;
-}
-
-#image_present {
-  display: block;
-  margin-left: 150px;
-  width: 100%;
-  height: 450px;
-  z-index: 1;
-  border-style: black 5px ridge;
-}
-
-#text_present {
-  z-index: 50;
-  color: black;
-  font-family: "milstone_outline";
-  font-size: 70px;
-  position: absolute;
-  top: 15%;
-  left: 15%;
-}
-
-.button {
-  z-index: 50;
-  position: absolute;
-  top: 55%;
-  left: 75%;
-}
-
-/* Container numéro 2, ecologie */
-#container_2 {
-  height: 500px;
-  margin-top:30px;
-  margin-bottom: 30px;
-}
-
-.button_M {
-  z-index: 50;
-}
-
-/* Container numéro 3, contacte */
-#container_3 {
-  height: 500px;
-  margin-top:30px;
-  margin-bottom: 30px;
-}
-
-/* Commun a la page */
-hr {
-  width: 60%;
-}
-
 </style>

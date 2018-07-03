@@ -3,7 +3,7 @@
 
     <div class="col s12 m8">
       <div id="container_1">
-          <img id="image_present" src="..\assets\menu\house_draw.jpg">
+          <img id="image_present" src="../assets/menu/house_draw.jpg">
           <a class="waves-effect amber accent-3 btn-large button"><i class="material-icons left">cloud</i>Parcourir</a>
           <span id="text_present">POURQUOI <br/> PAS VOUS ?</span>
       </div>
@@ -124,7 +124,7 @@ export default {
   },
   mounted: function () {
     var elems = document.querySelectorAll('.collapsible')
-    M.Collapsible.init(elems, {})
+    window.M.Collapsible.init(elems, {})
   }
 }
 </script>

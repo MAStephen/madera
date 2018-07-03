@@ -1,19 +1,14 @@
 <template>
+<div>
+
+  <bloc basepath="menu" image="house_draw.jpg" title="Madera" text="Pourquoi pas vous ?" />
+
   <div class="container">
-    <div class="col s12 m12 right">
-      <div id="container_1">
-          <img id="image_present" src="../assets/menu/house_draw.jpg">
-          <a class="waves-effect amber accent-3 btn-large button"><i class="material-icons left">cloud</i>Parcourir</a>
-          <span id="text_present">POURQUOI <br/> PAS VOUS ?</span>
-      </div>
-    </div>
-
-    <hr class="separateur">
-
     <div id="container_2">
       <div class="row">
-      <div><h2>MADERA & VOUS</h2></div>
-      <div class="col s6 m12">
+      <div class="center"><h2>MADERA & VOUS</h2></div>
+      <div class="col m12">
+      <div class="col s6 m6">
         <ul class="collapsible">
           <li>
             <div class="collapsible-header active"><i class="material-icons">accessibility</i>Vous</div>
@@ -60,6 +55,7 @@
             </div>
           </li>
         </ul>
+      </div>
       </div>
 
       <div id="container_3" class="row">
@@ -110,9 +106,13 @@
     </div>
    </div>
   </div>
+
+  </div>
 </template>
 
 <script>
+import Bloc from './Bloc.vue'
+
 export default {
   name: 'Menu',
   data () {
@@ -122,64 +122,14 @@ export default {
   mounted: function () {
     var elems = document.querySelectorAll('.collapsible')
     window.M.Collapsible.init(elems, {})
+  },
+
+  components: {
+    Bloc
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* Container numéro 1, présentation */
-@font-face {
-  font-family: "milstone_outline";
-  src: url(..\assets\font\Milestone_Outline.otf);
-}
-
-#container_1 {
-  width: 100vw;
-  height: 550px;
-  margin-bottom: 30px;
-}
-
-#image_present {
-  display: block;
-  margin-left: 410px;
-  width: 80%;
-  height: 550px;
-}
-
-#text_present {
-  z-index: 50;
-  color: black;
-  font-family: "milstone_outline";
-  font-size: 70px;
-  position: absolute;
-  top: 15%;
-  left: 15%;
-}
-
-.button {
-  position: absolute;
-  top: 55%;
-  left: 75%;
-}
-
-/* Container numéro 2, ecologie */
-#container_2 {
-  height: 500px;
-  margin-top:30px;
-  margin-bottom: 30px;
-}
-
-/* Container numéro 3, contacte */
-#container_3 {
-  height: 500px;
-  margin-top:30px;
-  margin-bottom: 30px;
-}
-
-/* Commun a la page */
-hr {
-  width: 60%;
-}
-
 </style>

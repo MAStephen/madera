@@ -1,9 +1,8 @@
 <template>
-  <div>
-
-    <div class="col s12 m8">
+  <div class="container">
+    <div class="col s12 m12 right">
       <div id="container_1">
-          <img id="image_present" src="..\assets\menu\house_draw.jpg">
+          <img id="image_present" src="../assets/menu/house_draw.jpg">
           <a class="waves-effect amber accent-3 btn-large button"><i class="material-icons left">cloud</i>Parcourir</a>
           <span id="text_present">POURQUOI <br/> PAS VOUS ?</span>
       </div>
@@ -13,8 +12,8 @@
 
     <div id="container_2">
       <div class="row">
-      <div class="col s6 m12"><h2>MADERA & VOUS</h2></div>
-      <div class="col s6 m6">
+      <div><h2>MADERA & VOUS</h2></div>
+      <div class="col s6 m12">
         <ul class="collapsible">
           <li>
             <div class="collapsible-header active"><i class="material-icons">accessibility</i>Vous</div>
@@ -38,7 +37,7 @@
           </li>
         </ul>
       </div>
-      <div class="col s12 m6">
+      <div class="col s6 m6">
          <ul class="collapsible">
           <li>
             <div class="collapsible-header"><i class="material-icons">local_florist</i>L'écologie</div>
@@ -108,10 +107,8 @@
           </ul>
         </div>
       </div>
-
     </div>
-    </div>
-
+   </div>
   </div>
 </template>
 
@@ -138,18 +135,16 @@ export default {
 }
 
 #container_1 {
-  width: 80vw;
-  height: 450px;
+  width: 100vw;
+  height: 550px;
   margin-bottom: 30px;
 }
 
 #image_present {
   display: block;
-  margin-left: 150px;
-  width: 100%;
-  height: 450px;
-  z-index: 1;
-  border-style: black 5px ridge;
+  margin-left: 410px;
+  width: 80%;
+  height: 550px;
 }
 
 #text_present {
@@ -163,7 +158,6 @@ export default {
 }
 
 .button {
-  z-index: 50;
   position: absolute;
   top: 55%;
   left: 75%;
@@ -174,10 +168,6 @@ export default {
   height: 500px;
   margin-top:30px;
   margin-bottom: 30px;
-}
-
-.button_M {
-  z-index: 50;
 }
 
 /* Container numéro 3, contacte */

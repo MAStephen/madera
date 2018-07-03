@@ -4,9 +4,7 @@
       <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper">
-            <a href="#" class="left slogan">{{slogan}}</a>
-
-            <router-link to="/" class="brand-logo center">{{titre}}</router-link>
+            <router-link to="/" class="brand-logo left">{{titre}}</router-link>
 
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><router-link to="why"><i class="small material-icons left">dashboard</i>{{menu_2}}</router-link></li>

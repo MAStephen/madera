@@ -3,7 +3,7 @@
     <bloc basepath="why/parralax" image="parallax.jpg" title="Nos idées" text="La seule limite votre imagination !" />
 
     <div class="container">
-       <div class="row">
+       <div class="row hide-on-med-and-down">
           <div class="col s4">
             <card basepath="why/card" image="iso.jpg" title="Qualité" text="La certification norme ISO 9001 est une garantie d'engagement du le plan de la qualité. Une entreprise certifiée ISO 9001 respecte un référentiel et est soumise à des contrôles qualité. Elle s'engage également à maintenir une amélioration continue." />
           </div>

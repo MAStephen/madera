@@ -23,7 +23,7 @@
 
       <footer class="page-footer blue-grey">
         <div class="footer-copyright">
-          <div class="container"> <p>© 2018 Copyright 
+          <div class="container"> <p>© 2018 Copyright
           <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
           </p>
           </div>
@@ -36,14 +36,14 @@
 <script>
 export default {
   name: 'App',
-  data() {
+  data () {
     return {
       titre: 'MADERA',
       menu_1: 'Les démarches',
       menu_2: 'Nos idées',
       menu_3: 'RDV',
       menu_4: 'Nous'
-    } 
+    }
   }
 }
 </script>
